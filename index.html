@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Simon Game</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+<link rel='stylesheet prefetch' href='https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+          <audio preload="auto" id="soundgreen" data-pad="0" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3">
+      </audio>
+      <audio preload="auto" id="soundred" data-pad="1" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3">
+      </audio>
+      <audio preload="auto" id="soundyellow" data-pad="2" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3">
+      </audio>
+      <audio preload="auto" id="soundblue" data-pad="3" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3">
+      </audio>
+      <audio preload="auto" id="soundWrong" src="http://www.freesound.org/data/previews/331/331912_3248244-lq.mp3"></audio>
+
+<div class='wrapper'>
+  <div class='back'>
+    <div class='piece col-xs-6' id='green' data-tile='0'>
+    </div>
+    <div class='piece col-xs-6' id='red' data-tile='1'>
+    </div>
+    <div class='piece col-xs-6' id='yellow' data-tile='2'>
+    </div>
+    <div class='piece col-xs-6' id='blue' data-tile='3'>
+    </div>
+  </div>
+  <div class ='circle'><div id='display'>--</div>
+    
+    <div id='controls'>
+ <!-- <input id='running' type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-size="mini" onclick='runGame()'/>-->
+    
+      <button class='btn btn-default on' id='start'>start</button>
+      
+      <button class='btn btn-default on' id='strict'>strict</button>
+      
+      <button class='btn btn-default on' id='reset'>reset</button>
+      
+
+    </div>
+  </div>
+</div>
+
+<div class='text-center footer navbar-fixed-bottom'><p>coded by <a href='http://gionaufal.com'> gionaufal</a></p></div>
+</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+<script src='https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
